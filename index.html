@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Sharat George: Running Software Engineering Teams & Building AI-Based SaaS Tools</title>
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css" />
+    <style>
+        :root {
+            /* Dark Mode Colors */
+            --background-color: #151515;
+            /* Dark background */
+            --font-color: #e8eff2;
+            /* Light text */
+            --code-bg-color: #363636;
+            /* Darker background for code blocks */
+            --block-background-color: #222;
+            /* Dark background for blocks */
+            --progress-bar-background: #727578;
+            /* Dark background for progress bars */
+            --progress-bar-fill: #e8eff2;
+            /* Light fill for progress bars */
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            max-width: 960px;
+            /* Maximum width of the content */
+            display: flex;
+            align-items: center;
+            /* Ensure items are aligned in the middle vertically */
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .terminal-prompt,
+        .terminal-nav {
+            display: flex;
+            align-items: center;
+            /* This will vertically center the links in the nav */
+        }
+
+        .content {
+            flex-grow: 1;
+            width: 100%;
+            /* Adjust based on your design */
+            max-width: 960px;
+            /* Maximum width of the content */
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content ul {
+            margin-top: 0;
+        }
+
+        .terminal-nav ul {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            list-style: none;
+        }
+
+        .terminal-nav ul li a {
+            padding: 10px;
+            text-decoration: none;
+            color: #5FFDFF;
+            /* Primary color */
+        }
+
+        .terminal-nav ul li a:hover {
+            color: white;
+            background-color: transparent;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                margin-top: 20px; /* Add margin at the top */
+            }
+
+            .terminal-nav ul {
+                justify-content: center;
+                padding-top: 10px;
+                /* Add some spacing when stacked */
+            }
+        }
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header">
+        <div class="terminal-prompt"><a href="#home" class="active">&nbsp;cat Steven_Sharat_George.txt</a></div>
+        <nav class="terminal-nav">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <p>👋 Hello, I'm Steven Sharat George, an engineering manager working in tech and a builder of free AI-infused SaaS apps. This page will be regularly updated with apps I build and technical whitepapers that I write.</p>
+        <p>If you'd like to reach out to collaborate, please check the contact section.</p>
+
+        <h4 id="projects">Projects</h4>
+        <ul>
+            <li>TrendCommander (Mar 2024)</li>
+        </ul>
+
+        <h4 id="articles">Articles</h4>
+        <ul>
+            <li>LLM Experiments (Apr 2024)</li>
+        </ul>
+
+        <h4 id="contact">Contact/Socials</h4>
+        <ul>
+            <li><span id="email"></span></li>
+            <script>
+                // Generate the email address dynamically to avoid spam
+                var user = 'sgeorge';
+                var domain = 'hey.com';
+                var element = document.getElementById('email');
+                element.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + 'Email' + '</a>';
+            </script>
+            <li><a href="https://www.linkedin.com/steshageo">LinkedIn</a></li>
+        </ul>
+    </div>
+</html>
